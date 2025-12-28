@@ -1,28 +1,26 @@
 <h2><?php esc_attr_e( 'Tables', 'WpAdminStyle' ); ?></h2>
 
 <p><strong>Table with class <code>form-table</code></strong></p>
-<table class="form-table">
+<table class="form-table" role="presentation">
 	<tr>
-		<th class="row-title"><?php esc_attr_e( 'Table header cell #1', 'WpAdminStyle' ); ?></th>
-		<th><?php esc_attr_e( 'Table header cell #2', 'WpAdminStyle' ); ?></th>
+		<th scope="row"><label for="blogname">Site Title</label></th>
+		<td><input name="blogname" type="text" id="blogname" value="WordPress" class="regular-text" /></td>
 	</tr>
-	<tr valign="top">
-		<td scope="row"><label for="tablecell"><?php esc_attr_e(
-					'Table data cell #1, with label', 'WpAdminStyle'
-				); ?></label></td>
-		<td><?php esc_attr_e( 'Table Cell #2', 'WpAdminStyle' ); ?></td>
+	<tr class="form-invalid form-required">
+		<th scope="row"><label for="forminvalid-example">Form invalid (<code>form-invalid</code>) with <code>form-required</code> on table row</label></th>
+		<td><input name="forminvalid-example" type="text" id="forminvalid-example" aria-describedby="tagline-description" value="" class="regular-text" /></td>
 	</tr>
-	<tr valign="top" class="alternate">
-		<td scope="row"><label for="tablecell"><?php esc_attr_e(
-					'Table Cell #3, with label and class', 'WpAdminStyle'
-				); ?> <code>alternate</code></label></td>
-		<td><?php esc_attr_e( 'Table Cell #4', 'WpAdminStyle' ); ?></td>
+	<tr class="form-invalid">
+		<th scope="row"><label for="forminvalid-example2">Form invalid on table row, <code>form-required</code> on the input</label></th>
+		<td><input name="forminvalid-example" type="text" id="forminvalid-example2" aria-describedby="tagline-description" value="" class="regular-text form-required" /></td>
 	</tr>
-	<tr valign="top">
-		<td scope="row"><label for="tablecell"><?php esc_attr_e(
-					'Table Cell #5, with label', 'WpAdminStyle'
-				); ?></label></td>
-		<td><?php esc_attr_e( 'Table Cell #6', 'WpAdminStyle' ); ?></td>
+	<tr class="form-invalid form-required">
+		<th scope="row"><label for="forminvalid-example3">Form invalid (<code>form-invalid</code>) with <code>form-required</code> on table row</label></th>
+		<td><select id="forminvalid-example3"><option value="">Select an option</option></select></td>
+	</tr>
+	<tr class="form-invalid">
+		<th scope="row"><label for="forminvalid-example4">Form invalid on table row, <code>form-required</code> on the select box</label></th>
+		<td><select id="forminvalid-example4" class="form-required"><option value="">Select an option</option></select></td>
 	</tr>
 </table>
 
