@@ -2,26 +2,28 @@
 
 <p><strong>Table with class <code>form-table</code></strong></p>
 <table class="form-table" role="presentation">
-	<tr>
-		<th scope="row"><label for="blogname">Site Title</label></th>
-		<td><input name="blogname" type="text" id="blogname" value="WordPress" class="regular-text" /></td>
-	</tr>
-	<tr class="form-invalid form-required">
-		<th scope="row"><label for="forminvalid-example">Form invalid (<code>form-invalid</code>) with <code>form-required</code> on table row</label></th>
-		<td><input name="forminvalid-example" type="text" id="forminvalid-example" aria-describedby="tagline-description" value="" class="regular-text" /></td>
-	</tr>
-	<tr class="form-invalid">
-		<th scope="row"><label for="forminvalid-example2">Form invalid on table row, <code>form-required</code> on the input</label></th>
-		<td><input name="forminvalid-example" type="text" id="forminvalid-example2" aria-describedby="tagline-description" value="" class="regular-text form-required" /></td>
-	</tr>
-	<tr class="form-invalid form-required">
-		<th scope="row"><label for="forminvalid-example3">Form invalid (<code>form-invalid</code>) with <code>form-required</code> on table row</label></th>
-		<td><select id="forminvalid-example3"><option value="">Select an option</option></select></td>
-	</tr>
-	<tr class="form-invalid">
-		<th scope="row"><label for="forminvalid-example4">Form invalid on table row, <code>form-required</code> on the select box</label></th>
-		<td><select id="forminvalid-example4" class="form-required"><option value="">Select an option</option></select></td>
-	</tr>
+	<tbody>
+		<tr>
+			<th scope="row"><label for="blogname">Site Title</label></th>
+			<td><input name="blogname" type="text" id="blogname" value="WordPress" class="regular-text" /></td>
+		</tr>
+		<tr class="form-invalid form-required">
+			<th scope="row"><label for="forminvalid-example">Form invalid (<code>form-invalid</code>) with <code>form-required</code> on table row</label></th>
+			<td><input name="forminvalid-example" type="text" id="forminvalid-example" aria-describedby="tagline-description" value="" class="regular-text" /></td>
+		</tr>
+		<tr class="form-invalid">
+			<th scope="row"><label for="forminvalid-example2">Form invalid on table row, <code>form-required</code> on the input</label></th>
+			<td><input name="forminvalid-example" type="text" id="forminvalid-example2" aria-describedby="tagline-description" value="" class="regular-text form-required" /></td>
+		</tr>
+		<tr class="form-invalid form-required">
+			<th scope="row"><label for="forminvalid-example3">Form invalid (<code>form-invalid</code>) with <code>form-required</code> on table row</label></th>
+			<td><select id="forminvalid-example3"><option value="">Select an option</option></select></td>
+		</tr>
+		<tr class="form-invalid">
+			<th scope="row"><label for="forminvalid-example4">Form invalid on table row, <code>form-required</code> on the select box</label></th>
+			<td><select id="forminvalid-example4" class="form-required"><option value="">Select an option</option></select></td>
+		</tr>
+	</tbody>
 </table>
 
 <br class="clear" />
